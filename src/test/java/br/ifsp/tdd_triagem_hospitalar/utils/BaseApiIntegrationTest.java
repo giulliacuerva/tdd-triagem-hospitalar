@@ -36,8 +36,6 @@ public class BaseApiIntegrationTest {
 
     @AfterEach
     protected void tearDown() {
-        jdbcTemplate.update("DELETE FROM medicao");
-        jdbcTemplate.update("DELETE FROM atendimento");
         userRepository.deleteAll();
     }
 
