@@ -10,7 +10,6 @@ import org.junit.jupiter.api.TestInstance;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.server.LocalServerPort;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.client.RestTemplate;
 
@@ -23,8 +22,6 @@ public class BaseApiIntegrationTest {
     protected int port = 8080;
     @Autowired
     protected JpaUserRepository userRepository;
-    @Autowired
-    protected JdbcTemplate jdbcTemplate;
     @Autowired
     protected PasswordEncoder passwordEncoder;
 
